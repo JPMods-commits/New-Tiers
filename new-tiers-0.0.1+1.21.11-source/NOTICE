@@ -1,0 +1,17 @@
+New Tiers 0.0.1+1.21.11
+Modifications and custom build by McTiers, 29 October 2026.
+
+Based on Tiers 0.8.0+1.21.11 by Flavio6561 and contributors.
+Original source: https://github.com/PvPTiers/Tiers
+Original revision: 509634b31c6da11ffac43c3da74542cb5f693d5a
+
+Distributed under the GNU General Public License, version 3.
+Original authorship and applicable copyright notices are retained.
+This custom build is not an official release of the original project.
+
+Changes: removed the PvPTiers provider and Classic/PvPTiers styling;
+uses mctiers.net and subtiers.net; updated branding, icon and settings;
+retains Mod Menu configuration and the original client-side tier displays.
+
+Complete corresponding source and build files are included in this JAR
+at META-INF/new-tiers-source.zip. See README.md inside that archive.

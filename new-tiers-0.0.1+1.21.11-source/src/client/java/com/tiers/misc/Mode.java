@@ -1,0 +1,80 @@
+package com.tiers.misc;
+
+import com.tiers.textures.Icons;
+import net.minecraft.text.Style;
+import net.minecraft.text.StyleSpriteSource;
+import net.minecraft.text.Text;
+import net.minecraft.util.Colors;
+import net.minecraft.util.Identifier;
+
+import java.util.Arrays;
+import java.util.Locale;
+
+public enum Mode {
+    MCTIERS_VANILLA(Category.MCTIERS, "\uF000", "Vanilla"),
+    MCTIERS_UHC(Category.MCTIERS, "\uF001", "UHC"),
+    MCTIERS_POT(Category.MCTIERS, "\uF002", "Pot"),
+    MCTIERS_NETH_OP(Category.MCTIERS, "\uF003", "Neth Op"),
+    MCTIERS_SMP(Category.MCTIERS, "\uF004", "Smp"),
+    MCTIERS_SWORD(Category.MCTIERS, "\uF005", "Sword"),
+    MCTIERS_AXE(Category.MCTIERS, "\uF006", "Axe"),
+    MCTIERS_MACE(Category.MCTIERS, "\uF007", "Mace"),
+
+
+    SUBTIERS_MINECART(Category.SUBTIERS, "\uF000", "Minecart"),
+    SUBTIERS_DIAMOND_VANILLA(Category.SUBTIERS, "\uF001", "Diamond Vanilla"),
+    SUBTIERS_DEBUFF(Category.SUBTIERS, "\uF002", "DeBuff"),
+    SUBTIERS_ELYTRA(Category.SUBTIERS, "\uF003", "Elytra"),
+    SUBTIERS_SPEED(Category.SUBTIERS, "\uF004", "Speed"),
+    SUBTIERS_CREEPER(Category.SUBTIERS, "\uF005", "Creeper"),
+    SUBTIERS_MANHUNT(Category.SUBTIERS, "\uF006", "Manhunt"),
+    SUBTIERS_DIAMOND_SMP(Category.SUBTIERS, "\uF007", "Diamond Smp"),
+    SUBTIERS_BOW(Category.SUBTIERS, "\uF008", "Bow"),
+    SUBTIERS_BED(Category.SUBTIERS, "\uF009", "Bed"),
+    SUBTIERS_OG_VANILLA(Category.SUBTIERS, "\uF00A", "OG Vanilla"),
+    SUBTIERS_TRIDENT(Category.SUBTIERS, "\uF00B", "Trident");
+
+    private final Category category;
+    private final String unicode;
+    private final String label;
+
+    Mode(Category category, String unicode, String label) {
+        this.category = category;
+        this.unicode = unicode;
+        this.label = label;
+    }
+
+    public enum Category {
+        MCTIERS,
+        SUBTIERS
+    }
+
+    public Text getIcon() {
+        Identifier identifier = switch (category) {
+            case MCTIERS -> Icons.identifierMCTiers;
+            case SUBTIERS -> Icons.identifierSubtiers;
+        };
+        return Text.literal(unicode).setStyle(Style.EMPTY.withFont(new StyleSpriteSource.Font(identifier)).withColor(Colors.WHITE));
+    }
+
+    public Text getIconTag() {
+        Identifier identifier = switch (category) {
+            case MCTIERS -> Icons.identifierMCTiersTags;
+            case SUBTIERS -> Icons.identifierSubtiersTags;
+        };
+        return Text.literal(unicode).setStyle(Style.EMPTY.withFont(new StyleSpriteSource.Font(identifier)).withColor(Colors.WHITE));
+    }
+
+    public Text getTextLabel() {
+        return Icons.colorText(label, name().toLowerCase(Locale.ROOT));
+    }
+
+    public static Mode[] getMCTiersValues() {
+        return Arrays.stream(values()).filter(mode -> mode.toString().contains("MCTIERS")).toArray(Mode[]::new);
+    }
+
+
+    public static Mode[] getSubtiersValues() {
+        return Arrays.stream(values()).filter(mode -> mode.toString().contains("SUBTIERS")).toArray(Mode[]::new);
+    }
+}

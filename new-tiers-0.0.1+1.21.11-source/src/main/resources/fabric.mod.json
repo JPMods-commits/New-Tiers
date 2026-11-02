@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "new_tiers",
+  "version": "${version}",
+  "name": "New Tiers",
+  "description": "Player tier tags by JPMods for mctiers.net and subtiers.net. Configure displays, gamemodes, icons, chat and tab-list tags through Mod Menu.",
+  "authors": [
+    "JPMods"
+  ],
+  "license": "GPL-3.0",
+  "contact": {
+    "homepage": "https://mctiers.net"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "MCTiers": "https://mctiers.net",
+        "Subtiers": "https://subtiers.net"
+      }
+    }
+  },
+  "icon": "assets/new_tiers/icon.png",
+  "entrypoints": {
+    "client": [
+      "com.tiers.TiersClient"
+    ],
+    "modmenu": [
+      "com.tiers.misc.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "tiers.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": [
+      "${minecraft_version}"
+    ],
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "environment": "client",
+  "suggests": {
+    "modmenu": "*"
+  },
+  "breaks": {
+    "tiers": "*"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "uuid": "3b653c04-f2d9-422a-87e7-ccf8b146c350",
+  "name": "TheRandomizer",
+  "region": "NA",
+  "points": 297,
+  "overall": 1,
+  "active_points": 28,
+  "active_rank": 2388,
+  "discord_id": "697976108053823588",
+  "rankings": {
+    "trident": {
+      "tier": 2,
+      "pos": 1,
+      "peak_tier": 2,
+      "peak_pos": 1,
+      "attained": 1774566889,
+      "retired": true
+    },
+    "manhunt": {
+      "tier": 2,
+      "pos": 0,
+      "peak_tier": 2,
+      "peak_pos": 0,
+      "attained": 1786313876,
+      "retired": true
+    },
+    "creeper": {
+      "tier": 1,
+      "pos": 0,
+      "peak_tier": 1,
+      "peak_pos": 0,
+      "attained": 1768009073,
+      "retired": true
+    },
+    "dia_crystal": {
+      "tier": 3,
+      "pos": 1,
+      "peak_tier": 3,
+      "peak_pos": 1,
+      "attained": 1752036206,
+      "retired": false
+    },
+    "debuff": {
+      "tier": 2,
+      "pos": 0,
+      "peak_tier": 2,
+      "peak_pos": 0,
+      "attained": 1768536417,
+      "retired": true
+    },
+    "minecart": {
+      "tier": 3,
+      "pos": 1,
+      "peak_tier": 3,
+      "peak_pos": 0,
+      "attained": 1783979300,
+      "retired": false
+    },
+    "bow": {
+      "tier": 4,
+      "pos": 0,
+      "peak_tier": 4,
+      "peak_pos": 0,
+      "attained": 1787355701,
+      "retired": false
+    },
+    "speed": {
+      "tier": 1,
+      "pos": 0,
+      "peak_tier": 1,
+      "peak_pos": 0,
+      "attained": 1766731374,
+      "retired": true
+    },
+    "elytra": {
+      "tier": 2,
+      "pos": 1,
+      "peak_tier": 2,
+      "peak_pos": 1,
+      "attained": 1793058694,
+      "retired": true
+    },
+    "dia_smp": {
+      "tier": 3,
+      "pos": 1,
+      "peak_tier": 3,
+      "peak_pos": 1,
+      "attained": 1753656281,
+      "retired": false
+    },
+    "bed": {
+      "tier": 3,
+      "pos": 1,
+      "peak_tier": 3,
+      "peak_pos": 1,
+      "attained": 1758950041,
+      "retired": false
+    },
+    "og_vanilla": {
+      "tier": 1,
+      "pos": 1,
+      "peak_tier": 1,
+      "peak_pos": 1,
+      "attained": 1760412099,
+      "retired": true
+    }
+  },
+  "badges": [],
+  "tests": [],
+  "all_time_points": 297,
+  "all_time_rank": 1
+}
